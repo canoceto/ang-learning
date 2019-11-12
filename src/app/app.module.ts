@@ -9,7 +9,10 @@ import {HmeComponent} from './home/home.component';
 import {NavComponent} from './nav/nav.component';
 import {ContactComponent} from './contact/contact.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {AngularMaterialModule} from './angular-material.module';
+import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { LogInComponent } from './log-in/log-in.component';
 
 @NgModule({
   declarations: [
@@ -17,17 +20,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutComponent,
     HmeComponent,
     NavComponent,
-    ContactComponent
+    ContactComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BrowserAnimationsModule,
+    AngularMaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {
 }

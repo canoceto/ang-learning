@@ -8,6 +8,7 @@ import {HmeComponent} from './home/home.component';
 // const routes: Routes = [];
 const routes: Routes = [
   { path: '', component: HmeComponent },
+  // { path: 'login', component: LogInComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
 ];
