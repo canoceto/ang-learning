@@ -6,14 +6,16 @@ import {HttpClient} from '@angular/common/http';
 })
 export class DataService {
 
-  constructor() {
+  constructor(private http: HttpClient) {
+  }
+
+  getUsers() {
+    return this.http.get('https://reqres.in/api/users');
   }
 
   firstClick() {
     return window.alert('Service');
   }
 
-  getUsers() {
-    return this.http.get('https://reqres.in/api/users');
-  }
+
 }
