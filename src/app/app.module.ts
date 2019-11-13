@@ -7,12 +7,13 @@ import {AppComponent} from './app.component';
 import {AboutComponent} from './about/about.component';
 import {HmeComponent} from './home/home.component';
 import {NavComponent} from './nav/nav.component';
+import { LogInComponent } from './log-in/log-in.component';
 import {ContactComponent} from './contact/contact.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AngularMaterialModule} from './angular-material.module';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
-import { LogInComponent } from './log-in/log-in.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +29,6 @@ import { LogInComponent } from './log-in/log-in.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
   ],
