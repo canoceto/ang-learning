@@ -1,5 +1,5 @@
-import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -10,12 +10,14 @@ export class DataService {
   }
 
   getUsers() {
-    return this.http.get('https://reqres.in/api/users');
+    return this.http.get('https://reqres.in/api/users?per_page=20');
   }
 
-  firstClick() {
-    return window.alert('Service');
+  getUser(id: number) {
+    return this.http.get('https://reqres.in/api/users/' + id);
   }
 
-
+  addUser(user) {
+    return this.http.post('https://reqres.in/api/users/', user);
+  }
 }

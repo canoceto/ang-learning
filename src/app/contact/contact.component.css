@@ -3,15 +3,18 @@ label {
 }
 
 input, textarea {
+  align-content: center;
   display: block;
-  width: 50%;
+  width: 100%;
   margin-bottom: 20px;
   padding: 1em;
 }
 
+
+
 .error {
   margin-top: -20px;
-  background: yellow;
+  color: red;
   padding: .5em;
   display: inline-block;
   font-size: .9em;
@@ -41,4 +44,14 @@ strong {
 span {
   margin-bottom: 20px;
   display: block;
+}
+
+form {
+  width: 50%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
 }

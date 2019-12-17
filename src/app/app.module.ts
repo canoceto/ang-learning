@@ -13,6 +13,8 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AngularMaterialModule} from './angular-material.module';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { UserComponent } from './user/user.component';
+import { UsersComponent } from './users/users.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
     HmeComponent,
     NavComponent,
     ContactComponent,
-    LogInComponent
+    LogInComponent,
+    UserComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

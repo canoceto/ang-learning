@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {DataService} from '../data.service';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-hme',
@@ -8,20 +8,10 @@ import {DataService} from '../data.service';
 })
 export class HmeComponent implements OnInit {
 
-  users: object;
 
   constructor(private data: DataService) {
   }
 
-  ngOnInit() {
-    this.data.getUsers().subscribe(data => {
-        this.users = data;
-        console.log(this.users);
-      }
-    );
-  }
-
-  firstClick() {
-    this.data.firstClick();
+  ngOnInit() {  
   }
 }
